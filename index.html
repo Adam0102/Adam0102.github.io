@@ -5,47 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fizika</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="kepek/fizika_ikon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container-fluid">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-          
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="kepek/fizika_kép3.jfif" alt="Los Angeles" height="200px" width="100%">
-              </div>
-          
-              <div class="item">
-                <img src="kepek/fizika_kép2.jpg" alt="Chicago" height="200px" width="100%">
-              </div>
-          
-              <div class="item">
-                <img src="kepek/fizika_kép1.jpg" alt="New York" height="200px" width="100%">
-              </div>
-            </div>
-          
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
-            </a>
+
+    <div class="container-fluid" id="kepek">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="kepek/fizika_kép1.jpg" alt="Számolás1" title="Számolás1">
           </div>
+          <div class="carousel-item">
+            <img src="kepek/fizika_kép2.jpg" alt="Számolás2" title="Számolás2">
+          </div>
+          <div class="carousel-item">
+            <img src="kepek/fizika_kép3.jfif" alt="Számolás3" title="Számolás3">
+          </div>
+        </div>      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <h1 class="d-none d-md-block">Fizikai számítások</h1>
+    </div>
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#tortenete">Története</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kapcsolat">A klasszikus és a modern fizika közti különbség</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#iranyai">A fejlődés irányai</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#fizikusok">Fizikusok</a>
+        </li>    
+      </ul>
+    </nav>
+    
+    <div class="container-fluid">
+      <h2 class="display-5" id="tortenete">A Fizika Története</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Ókori csillagászat</h3>
+          <p>A csillagászat a legrégebbi természettudomány. Az i.e. 3000-ig visszanyúlóan egyes korai társadalmak, mint a sumérok, az ókori egyiptomiak és az Indus-völgyi civilizáció, rendelkeztek a Nap, a Hold és a csillagok mozgásáról alkotott képpel, melyet előrejelzésre is használtak. A csillagok és a bolygók gyakran voltak imádat tárgyai: úgy hitték, hogy ezek az isteneiket képviselik. Bár a korai csillagászati elképzelések gyakran tudománytalan állításokat tartalmaztak, ezek a korai megfigyelések, mérések és feljegyzések alapozták meg a későbbi csillagászatot.</p>
+          <p>Asger Aaboe tudománytörténész szerint a nyugati csillagászat Mezopotámiából származik, és a nyugati világ egzakt tudományainak alapjait a késő babilóniai csillagászat fektette le. Az egyiptomi csillagászok a csillagképek és az égitestek mozgásainak ismeretét mutató műemlékeket hagytak hátra, míg Homérosz görög költő Iliászában és Odüsszeiájában számos égitestről írt; később a görög csillagászok adtak mai napig használatos neveket az északi félgömbről látható csillagképeknek. Mindezek arra utalnak, hogy az ókor egyes társadalmaiban kiterjedt ismeretekkel rendelkeztek ezen égitestekről, és mozgásaikról.</p>
+        </div>
+        <div class="col-lg-6">
+          <h3>Természetfilozófia</h3>
+            <p>A természetfilozófia gyökerei az archaikus kor (i.e. 650 - i.e. 480) Görögországában találhatók, amikor is a Szókratész előtti filozófusok mint Thalész elutasították a természeti jelenségek nem-természeti magyarázatát, és azt hirdették, hogy minden eseménynek természeti oka van. Okkal és megfigyeléssel ellenőrzött elképzeléseket javasoltak, és a kísérletek során számos feltevésük sikeresnek bizonyult; például az atomizmus közel 2000 évvel azután találták helyesnek, hogy Leukipposz és tanítványa Démokritosz először felvetette.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6"> 
+          <h3>Fizika a középkori iszlám világban</h3>
+            <p>Az iszlám tudományosság a görögöktől megörökölte az arisztotelészi fizikát, és az Iszlám Aranykor idején továbbfejlesztette, különös hangsúlyt helyezve a megfigyelésre és az a priori érvelésre, kifejlesztve a tudományos módszer korai formáját. A legfigyelemreméltóbb találmányok a fénytan és látás terén jelentkeztek, az olyan tudósok munkáiban, mint Ibn Sahl, Al-Kindi, Ibn Al-Haitham, Al-Farisi és Avicenna.</p>
+            <p>A legjelentősebb mű Ibn Al-Haitham A fénytan könyve (más néven Kitāb al-Manāẓir) volt. Ebben nemcsak elsőként cáfolta meg a látás ókori görög ideáját, hanem egy új elmélettel állt elő. Szintén ő volt az első, aki tanulmányozta a lyukkamera jelenségét, és munkájában a szem működésének részletesebb leírását adta. Boncolásai eredményére és a korábbi tudósok munkáira támaszkodva bemutatta, hogyan hatol be a fény a szembe, hogyan fókuszálódik, és hogyan vetítődik ki a szem hátuljára. Megépítette a világon az első camera obscurát, évszázadokkal a fényképészet modern fejlődése előtt.</p>
+            <p>A fénytan könyve nagyban befolyásolta a különböző tudományterületek gondolkodását. Nem csak a vizuális érzékelésről alkotott középkori tudományos képet formálta át, de a korabeli művészetre is hatással volt például perspektíva-ábrázolásra vonatkozó új elképzeléseken keresztül. Eredményei sok későbbi európai tudósra volt hatással, többek között Robert Grosseteste, Leonardo da Vinci, René Descartes, Johannes Kepler és Isaac Newton munkájára. Sokak szerint Ibn al-Haytham fénytani írásának hatása összemérhető Newton 1704-es Optikájával.</p>
+        </div>  
+        <div class="col-lg-6">
+          <h3>Klasszikus fizika</h3>
+            <p>A ma klasszikus fizikának nevezett gondolati rendszer Európában alakult ki. Az európai tudósok kísérleti szemlélete és kvalitatív méréseik révén tekinthető a fizika önálló tudományágnak.</p>
+            <p>Ezen korszak fő eredményei többek közt a Naprendszer geocentrikus világképének helyettesítése a heliocentrikus kopernikuszi világképpel, Kepler munkája 1609-1619 között a bolygótestek mozgását jellemző törvények meghatározására, Galileo Galilei 16.-17. századi úttörő munkája a távcsövek és a megfigyelési csillagászat területén, illetve Isaac Newton mozgástörvényei és a róla elnevezett gravitációs törvény. Newton munkája hozzájárult a matematikai analízis fejlődéséhez is, ugyanis az általa javasolt differenciálszámítás-formalizmust ma is alkalmazzuk a változó folyamatok leírására.</p>
+            <p>Az ipari forradalom hatására növekvő energiaszükségletre a termodinamika, kémia és elektromágnesség új törvényeinek felfedezése adhatott választ. A klasszikus fizikát alkotó törvények jó közelítésű leírását adják a nem relativisztikus sebességgel haladó, hétköznapi léptékű rendszerek viselkedésére. Bár az extrém méretű vagy sebességű rendszerek leírásához már például kvantummechanikára, vagy relativitáselméletre van szükség, a korrespondencia-elvnek megfelelően ezek klasszikus határesetei megfelelnek a klasszikus fizika jóslatainak.</p>
+            <p>Az ilyen, klasszikus képbe nem illő fizikai rendszerek vizsgálata a 20. században elvezetett az úgynevezett modern fizika kialakulásához.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Modern fizika</h3>
+            <p>A modern fizika Max Planck kvantumelméleti és Albert Einstein relativitáselmélettel kapcsolatos munkájával kezdődött a 20. század elején. Mindkét elméletet a klasszikus mechanika bizonyos fizikai rendszerek esetén, bizonyos kísérletekben megfigyelhető pontatlanságai hívták életre. A klasszikus mechanika például változó fénysebességet feltételez, mely nem volt összeegyeztethető az elektromágnesség Maxwell-egyenletei által előrejelzett állandó sebességgel; ezt az ellentmondást orvosolta Einstein speciális relativitáselmélete, mely állandó fénysebesség feltétele mellett írta le a klasszikus rendszerben tárgyalható, vagy azon túlmutató rendszerek mozgását.</p>
+            <p>A feketetest-sugárzás a klasszikus rendszerben értelmezhetetlen volt, ugyanis elmélete szerint a kisugárzott intenzitás a frekvenciával minden határon túl növekedne, így a kisugárzott energiateljesítmény a végtelenhez tartana (az erre vonatkozó elméleti és kísérleti eredményeket nevezzük ultraibolya-katasztrófának is). Az ellentmondást Planck azon felvetése oldotta fel, hogy az anyagi oszcillátorok gerjesztése csak frekvenciájukkal arányos diszkrét lépésekben legyen lehetséges. Ez az eredmény, a fényelektromos jelenséggel és egy elektronpályák diszkrét energiaszintjeinek feltevésével vezetett el a kvantummechanika kialakulásához.</p>
+            <p>A kvantummechanika úttörői Werner Heisenberg, Erwin Schrödinger és Paul Dirac. Többek között az ő munkájukra alapozva jöhetett létre a részecskefizika standard modellje is. A CERN-ben 2012-ben született, a Higgs-bozon felfedezésére vonatkozó eredmények arra utalnak, hogy a standard modell által megjósolt összes elemi részecske létezése kísérletileg kimutatható.</p>
+            <p>A standard modellen túli fizika, többek között olyan elméletekkel, mint a szuperszimmetrikus részecskéké, egy aktív kutatási terület. Ezen új elméletekben a matematika egyes területei, mint például a valószínűségelmélet, a csoportelmélet fontos szerepet kap.</p>
+          </div>
+      </div>
+
+      <h2 class="display-5" id="kapcsolat">A klasszikus és a modern fizika közti különbség</h2>
+      <div class="row">    
+        <div class="col-lg-3">
+          <img src="kepek/klasszikus és modern fizika kapcsolata.png" alt="A klasszikus és a modern fizika kapcsolata" title="A klasszikus és a modern fizika kapcsolata" id="képkapcsolat">
+          <p>A <b>klasszikus</b> és a <b>modern</b> fizika kapcsolata</p>
+        </div>    
+        <div class="col-lg-9">      
+          <div id="szoveg">
+           <p>Míg a fizika célja az általános természeti törvényszerűségek megállapítása, bizonyos elméletei azonban csak bizonyos feltételek mellett alkalmazhatók. Durván fogalmazva, a klasszikus fizika törvényei azokat a rendszereket írják le pontosan, melyek mérettartománya nagyobb az atominál, és melyek mozgása sokkal lassabb a fénysebességnél. Ezen tartományon kívül a megfigyelések nem egyeznek a klasszikus mechanika által megadott előrejelzésekkel. Albert Einstein fogalmazta meg a speciális relativitáselmélet gondolati rendszerét, mely az abszolút idő és tér fogalmát a téridővel helyettesítette. Így lehetővé tette az olyan rendszerek pontos leírását, melyek alkotóelemeinek sebessége közelít a fénysebességhez. Többek között Max Planck, Erwin Schrödinger, Neumann János és Niels Bohr munkája nyomán kialakult a kvantummechanika, mely a részecskék és kölcsönhatások valószínűségi felfogásán keresztül lehetővé tette az atomi és szubatomi léptékek pontos leírását. A későbbi kvantumtérelmélet célja a látszólag egymásnak ellentmondó kvantummechanika és speciális relativitáselmélet egyesítése volt. Az általános relativitáselmélet a gravitációs kölcsönhatást a téridő görbületeivel magyarázza, mellyel a világegyetem nagyon nagy tömegű és méretskálájú struktúrái jól leírhatók. Az általános relativitáselméletet, és így a négy természeti kölcsönhatás közül a gravitáció elméletét még nem sikerült összeegyeztetni a kvantummechanikával, bár a kvantumgravitáció elméletének leírására többféle elképzelés is született.</p> 
+          </div>
+        </div>    
+      </div>
+      
+      
+      <div class="row">
+        <h2 class="display-5" id="iranyai">A fejlődés irányai</h2> 
+          <p>A kondenzált anyagok fizikájában a legnagyobb megoldatlan probléma a magas hőmérsékletű szupravezetés. Nagy kísérleti erőfeszítéseket tesznek a működőképes spintronika és kvantumszámítógépek létrehozására.</p>
+        <p>A részecskefizikában a standard modellen túli fizika létezésére utaló első kísérleti bizonyítékok megjelenni látszanak. Mindenekelőtt annak a jeleit látják, hogy a neutrínó nem nulla tömegű. Ezek a kísérleti eredmények a napneutrínó-probléma megoldását jelenthetik a neutrínóoszcilláció útján. A tömeggel rendelkező neutrínók problémája jelenleg aktív elméleti és kísérleti kutatások tárgya. A 2010-es években nagy figyelem irányult az olyan részecskegyorsítók kísérleteire, mint az európai Nagy Hadronütköztető. Ez a gyorsító TeV-es energiaskálán végez részecskeütköztetéseket. 2012-ben olyan eredmények születtek, melyek arra mutatnak, hogy létezik a Higgs-bozon. Ezzel közelebb kerültek a fizikusok annak megértéséhez, hogy mi adja a testek tömegét. Az ütköztetőben továbbá folynak vizsgálatok a szuperszimmetrikus részecskék létezésével kapcsolatban is.</p>
+        <p>Fél évszázada terítéken van a kvantummechanika és az általános relativitáselmélet egyesítése. A jelenlegi legígéretesebb jelöltek az M-elmélet és a hurok kvantumgravitáció.</p>
+        <p>Sok csillagászati jelenséget meg kell még magyarázni, ilyen például az ultramagas energiájú kozmikus sugarak és a galaxisok anomális forgásperiódusának problémája. A megoldásul javasolt elméletek között található a duplán speciális relativitáselmélet, a módosított Newton-dinamika és a sötét anyag létezése. Továbbá az elmúlt évek kozmológiai feltételezései ellentmondanak a legutóbbi kísérleti bizonyítékoknak, miszerint a Világegyetem tágulása gyorsul.</p>
+        <div class="urhajos">  
+          <img src="kepek/urhajos.jpg" alt="Mind az űrhajós, mind a Föld szabadesésben vannak" title="Mind az űrhajós, mind a Föld szabadesésben vannak" width>
+          <p><strong>Mind az űrhajós, mind a Föld szabadesésben vannak</strong></p>
+        </div>  
+      </div>
+    
+    
+      <h2 class="display-5 text-center" id="fizikusok">Fizikusok</h2>
+      <div class="row">
+    
+        <div class="col-lg-6 py-3">
+          <div class="media border p-3 h-100">
+            <img src="kepek/Albert_Einstein.jpg" alt="Albert Einstein" title="Albert Einstein" class="mr-3 mt-3 fizikus">
+            <div class="media-body">
+              <h4>Albert Einstein</h4>
+              <p>Albert Einstein (Ulm, 1879. március 14. – Princeton, 1955. április 18.) zsidó származású német Nobel-díjas elméleti fizikus; egyes tudományos és laikus körökben a legnagyobb 20. századi tudósnak tartják. Ő dolgozta ki a relativitáselméletet és nagymértékben hozzájárult a kvantummechanika, a statisztikus mechanika és a kozmológia fejlődéséhez. 1921-ben fizikai Nobel-díjjal jutalmazták „az elméleti fizika területén szerzett eredményeiért, különös tekintettel a fényelektromos jelenség törvényszerűségeinek felismeréséért”. Zsenialitására jellemző, hogy előre tudott jelezni olyan dolgokat, amelyeket 100 évvel később a gyakorlatban is bizonyítottak. 2016. február 11-én amerikai kutatók bejelentették, hogy gravitációs hullámokkal kapcsolatos elmélete igazolódott, ezzel a felfedezéssel egy új tudományág született, a gravitációshullám-csillagászat.[</p>
+             </div>
+          </div>
+        </div>
+    
+        <div class="col-lg-6 py-3">
+         <div class="media border p-3 h-100">
+           <img src="kepek/Isaac_Newton.jpg" alt="Isaac Newton" title="Isaac Newton" class="mr-3 mt-3 fizikus">
+           <div class="media-body">
+             <h4>Isaac Newton</h4>
+             <p>Sir Isaac Newton (Woolsthorpe-by-Colsterworth, 1642. december 25. – London, 1727. március 20.) angol fizikus, matematikus, csillagász, filozófus és alkimista; az újkori történelem egyik kiemelkedő tudósa.
+              Korszakalkotó műve a Philosophiæ Naturalis Principia Mathematica (A természetfilozófia matematikai alapelvei, 1687), melyben leírja az egyetemes tömegvonzás törvényét, valamint az általa lefektetett axiómák révén megalapozta a klasszikus mechanika tudományát. Ő volt az első, aki megmutatta, hogy az égitestek és a Földön lévő tárgyak mozgását ugyanazon természeti törvények határozzák meg. Matematikai magyarázattal alátámasztotta Kepler bolygómozgási törvényeit, kiegészítve azzal, hogy a különböző égitestek nemcsak elliptikus, de akár hiperbola- vagy parabolapályán is mozoghatnak. Törvényei fontos szerepet játszottak a tudományos forradalomban és a heliocentrikus világkép elterjedésében.
+              Mindemellett optikai kutatásokat is végzett. Ő fedezte fel azt is, hogy a prizmán megfigyelhető színek valójában az áthaladó fehér fény alkotóelemei, nem pedig a prizma fényt színező hatásának tudható be – ahogy Roger Bacon feltételezte a 13. században –, valamint feltételezte, hogy a fénynek részecske természete van.
+              Newton, csakúgy, mint Leibniz, az analízis (differenciálszámítás és integrálszámítás), vagy más néven az infinitezimális kalkulus egyik megalkotója. Nevéhez fűződik a binomiális tétel bizonyítása és tetszőleges komplex kitevőre történő általánosítása.</p>
+            </div>
+         </div>
+       </div>
+    
+       <div class="col-lg-6 py-3">
+        <div class="media border p-3 h-100">
+          <img src="kepek/Johannes_Kepler.jpg" alt="Johannes Kepler" title="Johannes Kepler" class="mr-3 mt-3 fizikus">
+          <div class="media-body">
+            <h4>Johannes Kepler</h4>
+            <p>Johannes Kepler (magyarul ismert Kepler János néven is, Weil der Stadt, 1571. december 27. – Regensburg, Bajorország, 1630. november 15.) német matematikus és csillagász, aki felfedezte a bolygómozgás törvényeit, amiket róla Kepler-törvényeknek neveznek. Széleskörűen foglalkozott más megfigyelésekkel is, köztük optikával.</p>
+           </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 py-3">
+        <div class="media border p-3 h-100">
+          <img src="kepek/Galileo_Galilei.jpg" alt="Galileo Galilei" title="Galileo Galilei" class="mr-3 mt-3 fizikus">
+          <div class="media-body">
+            <h4>Galileo Galilei</h4>
+            <p>Galileo Galilei (Pisa, 1564. február 15. – Arcetri, 1642. január 8.) itáliai fizikus, csillagász, matematikus, természettudós. A fizikában az elsők között honosította meg a kísérleteket és méréseket, új módszereket adva ezzel a fizikának (és a többi természettudománynak). A csillagászatban ugyancsak az elsők között használt távcsöveket csillagászati jelenségek és égi objektumok megfigyelésére. Eredményei ellentmondtak az uralkodó ptolemaioszi, geocentrikus világképnek, ezért összeütközésbe került a katolikus egyházzal. Az inkvizíció 1633-ban a könyveit betiltotta, Galileit tanainak megtagadására kényszerítette, és házi őrizetben kellett élnie 1642-ben bekövetkezett haláláig. A katolikus egyház csak 1992-ben érvénytelenítette az ítéletet.</p>
+           </div>
+        </div>
+      </div>
+
+      </div>
     </div>
 </body>
 </html>
